@@ -96,3 +96,10 @@ footer {
     padding: 15px;
     margin-top: auto;
 }
+/* ตกแต่งโลโก้ใน Header */
+header .logo {
+    width: 80px;         /* ปรับความกว้างโลโก้ตามต้องการ */
+    height: auto;        /* ให้ความสูงปรับตามอัตราส่วนภาพ */
+    margin-bottom: 10px; /* ระยะห่างระหว่างโลโก้กับชื่อวิทยาลัย */
+    display: inline-block;
+}
