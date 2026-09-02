@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: #f4f6f9;
-    color: #333;
+    background-color: #f0fdf4; /* สีพื้นหลังขาวอมเขียวอ่อนอ่อน */
+    color: #2d3748;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,14 +15,14 @@ body {
 
 /* 1. ส่วนหัว (Header & Navigation) */
 header {
-    background-color: #88CFAF;
+    background-color: #14532d; /* สีเขียวเข้ม (Forest Green) */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 nav {
-    background-color: #2b6cb0;
+    background-color: #15803d; /* สีเขียวสด (Emerald Green) */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -37,8 +37,8 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-    background-color: #2c5282;
-    color: #ecc94b;
+    background-color: #166534; /* สีเขียวเข้มเมื่อวางเมาส์ */
+    color: #fef08a; /* สีเหลืองพาสเทลสำหรับข้อความไฮไลต์ */
 }
 
 /* 2. ส่วนเนื้อหา (Content) */
@@ -48,14 +48,14 @@ nav a:hover, nav a.active {
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     flex: 1;
     width: 90%;
 }
 
 h2 {
-    color: #2b6cb0;
-    border-bottom: 2px solid #e2e8f0;
+    color: #15803d; /* สีหัวข้อเขียว */
+    border-bottom: 2px solid #dcfce7; /* เส้นใต้สีเขียวอ่อน */
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -68,11 +68,16 @@ h2 {
 }
 
 .card {
-    border: 1px solid #e2e8f0;
+    border: 1px solid #bbf7d0; /* เส้นขอบการ์ดเขียวอ่อน */
     border-radius: 8px;
     padding: 15px;
     text-align: center;
-    background: #fafafa;
+    background: #f8fafc;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    border-color: #86efac;
 }
 
 .card img {
@@ -85,7 +90,7 @@ h2 {
 
 /* 3. ส่วนท้าย (Footer) */
 footer {
-    background-color: #1a365d;
+    background-color: #14532d; /* สีเขียวเข้มเข้ากับ Header */
     color: white;
     text-align: center;
     padding: 15px;
